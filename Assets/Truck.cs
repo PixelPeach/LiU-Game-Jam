@@ -32,7 +32,7 @@ public class Truck : MonoBehaviour {
     }
 
     float GetRandomTimer() {
-        return Random.Range(1.0f, 10.0f);
+        return Random.Range(1.0f, 2.5f);
     }
 
     void Update() {
@@ -45,6 +45,6 @@ public class Truck : MonoBehaviour {
         if (garbage == maxGarbage) {
             ChangePlanet();
         }
-        pivot.Rotate(0, 0, -25.0f * Time.deltaTime, Space.Self);
+        pivot.Rotate(0, 0, -45.0f * Time.deltaTime, Space.Self);
     }
 }
