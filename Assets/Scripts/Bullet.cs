@@ -2,15 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
-{
+public class Bullet : MonoBehaviour {
     float speed = 0.1f;
 
     [HideInInspector]
     public float zRotation;
 
-    void Update()
-    {
+    private void OnCollisionEnter2D(Collision2D collision) {
+        if (collision.gameObject.tag == "planet") {
+            Destroy(this.gameObject);
+        }
+    }
+
+    void Update() {
         transform.position += transform.up * Time.deltaTime * 10.0f;
 
         /*

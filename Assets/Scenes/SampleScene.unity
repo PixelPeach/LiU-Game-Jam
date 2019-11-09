@@ -829,6 +829,7 @@ GameObject:
   - component: {fileID: 1542553370}
   - component: {fileID: 1542553369}
   - component: {fileID: 1542553371}
+  - component: {fileID: 1542553372}
   m_Layer: 0
   m_Name: planet
   m_TagString: planet
@@ -915,6 +916,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   truck: {fileID: 311519036229825334, guid: a6f2409d55f8a2440848456307e3bf90, type: 3}
   planet: 2
+--- !u!58 &1542553372
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542553368}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2
 --- !u!4 &1586645704 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 311519036229825337, guid: a6f2409d55f8a2440848456307e3bf90,
@@ -932,6 +949,7 @@ GameObject:
   - component: {fileID: 1608480561}
   - component: {fileID: 1608480560}
   - component: {fileID: 1608480562}
+  - component: {fileID: 1608480563}
   m_Layer: 0
   m_Name: planet
   m_TagString: planet
@@ -1018,6 +1036,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   truck: {fileID: 311519036229825334, guid: a6f2409d55f8a2440848456307e3bf90, type: 3}
   planet: 1
+--- !u!58 &1608480563
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608480559}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2
 --- !u!1 &1633814634
 GameObject:
   m_ObjectHideFlags: 0
