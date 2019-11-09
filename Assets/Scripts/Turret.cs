@@ -18,7 +18,7 @@ public class Turret : MonoBehaviour {
     IEnumerator Shoot() {
         shooting = false;
         GameObject temp = Instantiate(bullet, transform.position, Quaternion.identity);
-        temp.GetComponent<Bullet>().zRotation = Mathf.Deg2Rad * transform.rotation.z + Mathf.PI;
+        temp.GetComponent<Bullet>().zRotation = Mathf.Deg2Rad * transform.localEulerAngles.z + Mathf.PI/2 ;
         yield return new WaitForSeconds(1.5f);
         shooting = true;
     }

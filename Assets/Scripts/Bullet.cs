@@ -11,7 +11,7 @@ public class Bullet : MonoBehaviour
 
     void Update()
     {
-        Vector2 pos = new Vector2(transform.position.x + speed*Mathf.Cos(zRotation), transform.position.y + speed * Mathf.Sin(zRotation));
+        Vector2 pos = new Vector2(transform.position.x + speed * Mathf.Cos(zRotation), transform.position.y + speed * Mathf.Sin(zRotation));
         transform.position = pos;
     }
 }
