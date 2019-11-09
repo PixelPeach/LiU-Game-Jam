@@ -17,6 +17,7 @@ public class Planet : MonoBehaviour {
     }
 
     public void StopSimulation() {
+        transform.GetChild(0).eulerAngles = new Vector3(0,0,0);
         simulating = false;
         GameObject[] turrets = GameObject.FindGameObjectsWithTag("turret");
         foreach (GameObject turret in turrets) {
