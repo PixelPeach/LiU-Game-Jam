@@ -17,6 +17,16 @@ public class Garbage : MonoBehaviour {
                 if (garbage != gameObject) {
                     transform.localScale *= 1.25f;
                     Destroy(garbage);
+                    /*
+                    if (garbage.transform.localScale.x > transform.localScale.x) {
+                        garbage.transform.localScale *= 1.25f;
+                        Destroy(gameObject);
+                    }
+                    else {
+                        transform.localScale *= 1.25f;
+                        Destroy(garbage);
+                    }
+                    */
                 }
             }
         }
