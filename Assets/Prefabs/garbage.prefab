@@ -98,6 +98,7 @@ MonoBehaviour:
   buildWindowPrefab: {fileID: 5478910796675934034, guid: c177216fc0393b548b28a7a72bcd8dc4,
     type: 3}
   turret: {fileID: 3611588201351249978, guid: 2b005c10c725d764990e93cac69dc70d, type: 3}
+  shield: {fileID: 5953059509201889966, guid: c5baaf9e11cb19e408ddb6216c4a71fb, type: 3}
 --- !u!58 &-397839935727510249
 CircleCollider2D:
   m_ObjectHideFlags: 0

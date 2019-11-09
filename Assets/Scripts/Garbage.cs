@@ -5,6 +5,7 @@ using UnityEngine;
 public class Garbage : MonoBehaviour {
     public GameObject buildWindowPrefab;
     public GameObject turret;
+    public GameObject shield;
     bool isUp = false;
     GameObject temp;
 
@@ -24,7 +25,8 @@ public class Garbage : MonoBehaviour {
             Destroy(this.gameObject);
         }
         else if (Input.GetKeyUp(KeyCode.Alpha2)) {
-            Debug.Log("Bought 2");
+            Instantiate(shield, transform.position, Quaternion.identity, transform.parent);
+            Destroy(this.gameObject);
         }
         else if (Input.GetKeyUp(KeyCode.Alpha3)) {
             Debug.Log("Bought 3");
