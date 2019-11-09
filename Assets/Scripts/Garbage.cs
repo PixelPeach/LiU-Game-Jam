@@ -12,6 +12,16 @@ public class Garbage : MonoBehaviour {
 
     }
 
+    private void OnMouseEnter() {
+        temp = Instantiate(buildWindowPrefab, transform.position, Quaternion.identity, transform);
+        temp.transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y + 2, transform.localPosition.z);
+        temp.transform.localScale = new Vector3(10f, 10f, 10f);
+    }
+
+    private void OnMouseExit() {
+        Destroy(temp);
+    }
+
     private void OnMouseUp() {
         //TODO: REMOVE LATER
         Instantiate(turret, transform.position, Quaternion.identity, transform.parent);
