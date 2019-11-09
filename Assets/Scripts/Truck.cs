@@ -48,7 +48,8 @@ public class Truck : MonoBehaviour {
             garbage++;
             timer = GetRandomTimer();
         }
-        if (garbage == maxGarbage) {
+        if (garbage == maxGarbage)
+        {
             ChangePlanet();
         }
         pivot.Rotate(0, 0, -45.0f * Time.deltaTime, Space.Self);

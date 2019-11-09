@@ -16,7 +16,7 @@ public abstract class Placeble : MonoBehaviour
 
     void TakeDamage()
     {
-        
+        //add health to all buildings
     }
 
 }

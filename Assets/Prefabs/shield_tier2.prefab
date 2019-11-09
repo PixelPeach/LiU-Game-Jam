@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingOrder: 2
   m_Sprite: {fileID: -3027678185172831563, guid: 616f29f207d7def488a55edaacd8a76c,
     type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7924528, g: 0.7924528, b: 0.7924528, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -193,6 +193,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70640b8849f8e204cabd2aa7b6199486, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  size: 1
+  startHealth: 2
 --- !u!1 &5953059509201889966
 GameObject:
   m_ObjectHideFlags: 0
@@ -204,7 +206,7 @@ GameObject:
   - component: {fileID: 5953059509201889965}
   - component: {fileID: 5953059509201889964}
   m_Layer: 0
-  m_Name: shield
+  m_Name: shield_tier2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -289,7 +291,7 @@ GameObject:
   - component: {fileID: 5953059510088275466}
   - component: {fileID: 5953059510088275467}
   - component: {fileID: 5871622927261420093}
-  - component: {fileID: 8845273266607503764}
+  - component: {fileID: 937995358}
   m_Layer: 0
   m_Name: shield_orbit
   m_TagString: shield
@@ -351,7 +353,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 1bbf0600b6b72b647af825848ffce9ca, type: 3}
-  m_Color: {r: 0, g: 0.8023877, b: 1, a: 0.4}
+  m_Color: {r: 0, g: 1, b: 0.6545744, a: 0.4}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -377,7 +379,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 2
---- !u!114 &8845273266607503764
+--- !u!114 &937995358
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -389,3 +391,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70640b8849f8e204cabd2aa7b6199486, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  size: 1.5
+  startHealth: 3
