@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Turret : MonoBehaviour {
+public class Turret : Placeble {
 
     public Rigidbody2D rb;
     public GameObject bullet;
-    float angle;
 
     public float maxAngle = 90;
     float targetAngle;
@@ -37,7 +36,7 @@ public class Turret : MonoBehaviour {
         shooting = true;
     }
 
-    void RotateTurret() {
+    void AimAndShoot() {
         GameObject[] Planets = GameObject.FindGameObjectsWithTag("planet");
         foreach (GameObject planet in Planets) {
             if (planet == this.transform.parent.gameObject) //check if the planet is the parent
@@ -50,10 +49,10 @@ public class Turret : MonoBehaviour {
             this.gameObject.transform.GetChild(0).transform.eulerAngles = new Vector3(transform.rotation.x, transform.rotation.y, -((Mathf.Rad2Deg * targetAngle) + (Mathf.Rad2Deg * (Mathf.PI / 2))));
 
         }
-        float deltaX = transform.parent.position.x - transform.position.x;
-        float deltaY = transform.parent.position.y - transform.position.y;
-        angle = Mathf.Atan2(deltaY, deltaX);
-        transform.eulerAngles = new Vector3(transform.rotation.x, transform.rotation.y, (Mathf.Rad2Deg * angle) + (Mathf.Rad2Deg * (Mathf.PI / 2)));
+        //float deltaX = transform.parent.position.x - transform.position.x;
+        //float deltaY = transform.parent.position.y - transform.position.y;
+        //angle = Mathf.Atan2(deltaY, deltaX);
+        //transform.eulerAngles = new Vector3(transform.rotation.x, transform.rotation.y, (Mathf.Rad2Deg * angle) + (Mathf.Rad2Deg * (Mathf.PI / 2)));
 
         if (Mathf.Abs(this.gameObject.transform.eulerAngles.z - this.gameObject.transform.GetChild(0).transform.eulerAngles.z) < maxAngle) {
             if (shooting && active) {
@@ -65,8 +64,10 @@ public class Turret : MonoBehaviour {
         }
     }
 
-    void Update() {
-        RotateTurret();
+    void Update()
+    {
+        StickToPlanet();
+        AimAndShoot();
         /*
         if (shooting && active) {
             StartCoroutine(Shoot());
