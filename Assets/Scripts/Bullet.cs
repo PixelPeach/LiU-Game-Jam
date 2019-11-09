@@ -12,10 +12,34 @@ public class Bullet : MonoBehaviour {
     private void OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.tag == "planet") {
             collision.gameObject.GetComponent<Planet>().healthbar.GetHurt();
+            if (collision.gameObject.GetComponent<Planet>().healthbar.isDead) {
+                collision.gameObject.GetComponent<Planet>().StopSimulation();
+
+                /*
+                List<GameObject> children = new List<GameObject>();
+                List<GameObject> objectsToDestroy = new List<GameObject>();
+
+                for (int i = 0; i < collision.gameObject.transform.childCount; i++) {
+                    if (collision.gameObject.transform.GetChild(i).gameObject.name == "turret") {
+                        //collision.gameObject.transform.GetChild(i).parent = GameObject.Find("OBJECTS").transform;
+                        children.Add(collision.gameObject.transform.GetChild(i).gameObject);
+                    }
+                    else {
+                        objectsToDestroy.Add(collision.gameObject.transform.GetChild(i).gameObject);
+                    }
+                }
+
+                foreach (GameObject obj in objectsToDestroy) {
+                    obj.SetActive(false);
+                }
+                */
+
+                Destroy(collision.gameObject);
+            }
             Destroy(this.gameObject);
         }
         else if (collision.gameObject.tag == "shield") {
-            collision.gameObject.transform.localScale *= 0.75f;
+            collision.gameObject.GetComponent<Shield>().GetHurt();
             Destroy(this.gameObject);
         }
     }
