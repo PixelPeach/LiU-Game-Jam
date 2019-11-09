@@ -1,13 +1,10 @@
-﻿
-
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Truck : MonoBehaviour {
     public List<GameObject> planets = new List<GameObject>();
     public GameObject garbagePrefab;
-    public int maxGarbage;
     int garbage;
     int index = 0;
 
@@ -22,7 +19,7 @@ public class Truck : MonoBehaviour {
 
     void ResetTransform() {
         transform.eulerAngles = new Vector3(0, 0, 0);
-        transform.localPosition = new Vector3(0, 2.25f, -1.0f);
+        transform.localPosition = new Vector3(0, 2.25f, -1);
     }
 
     void ChangePlanet() {
@@ -44,8 +41,10 @@ public class Truck : MonoBehaviour {
 
     void Update() {
         timer -= Time.deltaTime;
-        if (timer <= 0.0f && garbage < maxGarbage) {
-            GameObject obj = Instantiate(garbagePrefab, new Vector3(transform.position.x, transform.position.y, transform.position.z + 1), Quaternion.identity, transform.parent.parent);
+        int maxGarbage = GameObject.FindGameObjectsWithTag("planet")[index].GetComponent<Planet>().maxGarbage;
+        if (timer <= 0.0f && garbage < maxGarbage)
+        {
+            Instantiate(garbagePrefab, transform.position, Quaternion.identity, transform.parent.parent);
             garbage++;
             timer = GetRandomTimer();
         }
