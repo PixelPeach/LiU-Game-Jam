@@ -6,13 +6,10 @@ public class Garbage : MonoBehaviour {
     public GameObject buildWindowPrefab;
     public GameObject turret;
     public GameObject shield;
+    public GameObject house;
     bool isUp = false;
     GameObject temp;
-
-    void Start() {
-
-    }
-
+    
     private void OnMouseEnter() {
         temp = Instantiate(buildWindowPrefab, transform.position, Quaternion.identity, transform);
         temp.transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y + 2, transform.localPosition.z);
@@ -29,7 +26,8 @@ public class Garbage : MonoBehaviour {
             Destroy(this.gameObject);
         }
         else if (Input.GetKeyUp(KeyCode.Alpha3)) {
-            Debug.Log("Bought 3");
+            Instantiate(house, transform.position, Quaternion.identity, transform.parent);
+            Destroy(this.gameObject);
         }
     }
 
