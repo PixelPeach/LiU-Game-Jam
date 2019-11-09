@@ -1,4 +1,5 @@
 ﻿
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -25,7 +26,8 @@ public class Truck : MonoBehaviour {
         else {
             index++;
             transform.parent = planets[index].transform;
-            transform.localPosition = new Vector3(0, 2, 0);
+            transform.eulerAngles = new Vector3(0,0,0);
+            transform.localPosition = new Vector3(0, 2.25f, 0);
             pivot = planets[index].transform;
             garbage = 0;
         }

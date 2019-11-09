@@ -12,13 +12,13 @@ public class Turret : MonoBehaviour {
         float deltaX = transform.parent.position.x - transform.position.x;
         float deltaY = transform.parent.position.y - transform.position.y;
         angle = Mathf.Atan2(deltaY, deltaX);
-        transform.eulerAngles = new Vector3(transform.rotation.x, transform.rotation.y, angle);
+        transform.eulerAngles = new Vector3(transform.rotation.x, transform.rotation.y, (Mathf.Rad2Deg * angle) + (Mathf.Rad2Deg * (Mathf.PI/2)));
     }
 
     IEnumerator Shoot() {
         shooting = false;
         GameObject temp = Instantiate(bullet, transform.position, Quaternion.identity);
-        temp.GetComponent<Bullet>().zRotation = (Mathf.Rad2Deg * transform.rotation.z)*2 + Mathf.PI;
+        temp.GetComponent<Bullet>().zRotation = Mathf.Deg2Rad * transform.rotation.z + Mathf.PI;
         yield return new WaitForSeconds(1.5f);
         shooting = true;
     }
