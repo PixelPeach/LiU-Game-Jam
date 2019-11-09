@@ -10,8 +10,4 @@ public class House : Placeble
         transform.parent.GetComponent<Planet>().maxGarbage++;
     }
 
-    void Update()
-    {
-        
-    }
 }

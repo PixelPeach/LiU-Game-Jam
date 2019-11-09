@@ -6,7 +6,7 @@ public class Shield : Placeble {
 
     private void Start()
     {
-        transform.eulerAngles = StickToPlanet(transform.parent.position, transform);
+        transform.parent.eulerAngles = StickToPlanet(transform.parent.parent.position, transform.parent);
     }
 
     int health = 2;
