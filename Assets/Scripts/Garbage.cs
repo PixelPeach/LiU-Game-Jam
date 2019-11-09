@@ -8,7 +8,7 @@ public class Garbage : MonoBehaviour {
     public GameObject turret;
     public GameObject shield;
     public GameObject house;
-    //bool isUp = false;
+
     GameObject temp;
     float angle;
 
@@ -26,16 +26,6 @@ public class Garbage : MonoBehaviour {
                 if (garbage != gameObject) {
                     transform.localScale *= 1.25f;
                     Destroy(garbage);
-                    /*
-                    if (garbage.transform.localScale.x > transform.localScale.x) {
-                        garbage.transform.localScale *= 1.25f;
-                        Destroy(gameObject);
-                    }
-                    else {
-                        transform.localScale *= 1.25f;
-                        Destroy(garbage);
-                    }
-                    */
                 }
             }
         }
@@ -50,23 +40,17 @@ public class Garbage : MonoBehaviour {
 
     private void OnMouseOver() {
         if (Input.GetKeyUp(KeyCode.Alpha1)) {
-            GameObject obj = Instantiate(turret, transform.position, Quaternion.identity, transform.parent);
-            obj.transform.eulerAngles = transform.eulerAngles;
-
+            Instantiate(turret, transform.position, Quaternion.identity, transform.parent);
             Destroy(this.gameObject);
             Destroy(temp);
         }
         else if (Input.GetKeyUp(KeyCode.Alpha2)) {
-            GameObject obj = Instantiate(shield, transform.position, Quaternion.identity, transform.parent);
-            obj.transform.eulerAngles = transform.eulerAngles;
-
+            Instantiate(shield, transform.position, Quaternion.identity, transform.parent);
             Destroy(this.gameObject);
             Destroy(temp);
         }
         else if (Input.GetKeyUp(KeyCode.Alpha3)) {
-            GameObject obj = Instantiate(house, transform.position, Quaternion.identity, transform.parent);
-            obj.transform.eulerAngles = transform.eulerAngles;
-
+            Instantiate(house, transform.position, Quaternion.identity, transform.parent);
             Destroy(this.gameObject);
             Destroy(temp);
         }
