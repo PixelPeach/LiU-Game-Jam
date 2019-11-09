@@ -6,18 +6,12 @@ public abstract class Placeble : MonoBehaviour
 {
     protected float angle;
 
-    // Start is called before the first frame update
-    void Start()
+    protected Vector3 StickToPlanet(Vector2 parent, Transform self)
     {
-
-    }
-  
-    protected void StickToPlanet()
-    {
-        float deltaX = transform.parent.position.x - transform.position.x;
-        float deltaY = transform.parent.position.y - transform.position.y;
+        float deltaX = parent.x - self.position.x;
+        float deltaY = parent.y - self.position.y;
         angle = Mathf.Atan2(deltaY, deltaX);
-        transform.eulerAngles = new Vector3(transform.rotation.x, transform.rotation.y, (Mathf.Rad2Deg * angle) + (Mathf.Rad2Deg * (Mathf.PI / 2)));
+        return new Vector3(self.rotation.x, self.rotation.y, (Mathf.Rad2Deg * angle) + (Mathf.Rad2Deg * (Mathf.PI / 2)));
     }
 
     void TakeDamage()
@@ -25,10 +19,4 @@ public abstract class Placeble : MonoBehaviour
         
     }
 
-    
-
-    void Update()
-    {
-
-    }
 }
