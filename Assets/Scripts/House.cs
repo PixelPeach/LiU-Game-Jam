@@ -4,17 +4,10 @@ using UnityEngine;
 
 public class House : Placeble
 {
-    // Start is called before the first frame update
     void Start()
     {
-        StickToPlanet();
+        transform.eulerAngles = StickToPlanet(transform.parent.position, transform);
         transform.parent.GetComponent<Planet>().maxGarbage++;
-
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

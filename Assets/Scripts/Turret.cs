@@ -16,8 +16,7 @@ public class Turret : Placeble {
     void Start() {
         gameObject.name = "turret";
         rb = GetComponent<Rigidbody2D>();
-        StickToPlanet();
-
+        transform.eulerAngles = StickToPlanet(transform.parent.position, transform);
     }
 
     public void ActivateGravity() {
@@ -45,12 +44,7 @@ public class Turret : Placeble {
             float deltaYTarget = planet.transform.position.y - transform.parent.position.y;
             targetAngle = Mathf.Atan2(deltaYTarget, deltaXTarget);
             this.gameObject.transform.GetChild(0).transform.eulerAngles = new Vector3(transform.rotation.x, transform.rotation.y, -((Mathf.Rad2Deg * targetAngle) + (Mathf.Rad2Deg * (Mathf.PI / 2))));
-
         }
-        float deltaX = transform.parent.position.x - transform.position.x;
-        float deltaY = transform.parent.position.y - transform.position.y;
-        angle = Mathf.Atan2(deltaY, deltaX);
-        transform.eulerAngles = new Vector3(transform.rotation.x, transform.rotation.y, (Mathf.Rad2Deg * angle) + (Mathf.Rad2Deg * (Mathf.PI / 2)));
 
         if (Mathf.Abs(this.gameObject.transform.eulerAngles.z - this.gameObject.transform.GetChild(0).transform.eulerAngles.z) < maxAngle) {
             if (shooting && active) {
