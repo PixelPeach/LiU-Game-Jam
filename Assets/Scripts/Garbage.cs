@@ -5,10 +5,9 @@ using UnityEngine;
 public class Garbage : Placeble {
 
     public GameObject buildWindowPrefab;
-    public GameObject turret;
-    public GameObject shield;
-    public GameObject house;
-    //bool isUp = false;
+
+    public List<GameObject> placeables = new List<GameObject>();
+
     GameObject temp;
 
     private void Start() {
@@ -24,16 +23,6 @@ public class Garbage : Placeble {
                 if (garbage != gameObject) {
                     transform.localScale *= 1.25f;
                     Destroy(garbage);
-                    /*
-                    if (garbage.transform.localScale.x > transform.localScale.x) {
-                        garbage.transform.localScale *= 1.25f;
-                        Destroy(gameObject);
-                    }
-                    else {
-                        transform.localScale *= 1.25f;
-                        Destroy(garbage);
-                    }
-                    */
                 }
             }
         }
@@ -48,23 +37,17 @@ public class Garbage : Placeble {
 
     private void OnMouseOver() {
         if (Input.GetKeyUp(KeyCode.Alpha1)) {
-            GameObject obj = Instantiate(turret, transform.position, Quaternion.identity, transform.parent);
-            obj.transform.eulerAngles = transform.eulerAngles;
-
+            Instantiate(placeables[0], transform.position, Quaternion.identity, transform.parent);
             Destroy(this.gameObject);
             Destroy(temp);
         }
         else if (Input.GetKeyUp(KeyCode.Alpha2)) {
-            GameObject obj = Instantiate(shield, transform.position, Quaternion.identity, transform.parent);
-            obj.transform.eulerAngles = transform.eulerAngles;
-
+            Instantiate(placeables[1], transform.position, Quaternion.identity, transform.parent);
             Destroy(this.gameObject);
             Destroy(temp);
         }
         else if (Input.GetKeyUp(KeyCode.Alpha3)) {
-            GameObject obj = Instantiate(house, transform.position, Quaternion.identity, transform.parent);
-            obj.transform.eulerAngles = transform.eulerAngles;
-
+            Instantiate(placeables[2], transform.position, Quaternion.identity, transform.parent);
             Destroy(this.gameObject);
             Destroy(temp);
         }
