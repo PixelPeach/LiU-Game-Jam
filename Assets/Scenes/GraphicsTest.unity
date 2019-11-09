@@ -693,7 +693,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &927581915
 Transform:
   m_ObjectHideFlags: 0
@@ -747,9 +747,9 @@ SpriteMask:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3809393061997965297, guid: 07bb2c4f782977546aa9fef1292d099a,
+  m_Sprite: {fileID: -2939987857639073237, guid: 07bb2c4f782977546aa9fef1292d099a,
     type: 3}
-  m_MaskAlphaCutoff: 0.588
+  m_MaskAlphaCutoff: 0.921
   m_FrontSortingLayerID: 0
   m_BackSortingLayerID: 0
   m_FrontSortingLayer: 0
