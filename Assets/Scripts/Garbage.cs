@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Garbage : MonoBehaviour {
+public class Garbage : Placeble {
 
     public GameObject buildWindowPrefab;
     public GameObject turret;
@@ -10,13 +10,11 @@ public class Garbage : MonoBehaviour {
     public GameObject house;
     //bool isUp = false;
     GameObject temp;
-    float angle;
 
     private void Start() {
-        float deltaX = transform.parent.position.x - transform.position.x;
-        float deltaY = transform.parent.position.y - transform.position.y;
-        angle = Mathf.Atan2(deltaY, deltaX);
-        transform.eulerAngles = new Vector3(transform.rotation.x, transform.rotation.y, (Mathf.Rad2Deg * angle) + (Mathf.Rad2Deg * (Mathf.PI / 2)));
+        StickToPlanet();
+
+
     }
 
     void CheckForNeighbours() {

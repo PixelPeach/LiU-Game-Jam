@@ -9,9 +9,9 @@ public abstract class Placeble : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
 
+    }
+  
     protected void StickToPlanet()
     {
         float deltaX = transform.parent.position.x - transform.position.x;
@@ -20,9 +20,13 @@ public abstract class Placeble : MonoBehaviour
         transform.eulerAngles = new Vector3(transform.rotation.x, transform.rotation.y, (Mathf.Rad2Deg * angle) + (Mathf.Rad2Deg * (Mathf.PI / 2)));
     }
 
-    // Update is called once per frame
+    void TakeDamage()
+    {
+
+    }
+
     void Update()
     {
-        
+
     }
 }
