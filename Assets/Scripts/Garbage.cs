@@ -5,15 +5,11 @@ using UnityEngine;
 public class Garbage : Placeble {
 
     public GameObject buildWindowPrefab;
-
     public List<GameObject> placeables = new List<GameObject>();
-
     GameObject temp;
 
     private void Start() {
         StickToPlanet();
-
-
     }
 
     void CheckForNeighbours() {
