@@ -9,7 +9,7 @@ public class Garbage : Placeble {
     GameObject temp;
 
     private void Start() {
-        StickToPlanet();
+        transform.eulerAngles = StickToPlanet(transform.parent.position, transform);
     }
 
     void CheckForNeighbours() {
