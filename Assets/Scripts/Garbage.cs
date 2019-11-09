@@ -18,28 +18,21 @@ public class Garbage : MonoBehaviour {
         temp.transform.localScale = new Vector3(10f, 10f, 10f);
     }
 
+    private void OnMouseOver() {
+        if (Input.GetKeyUp(KeyCode.Alpha1)) {
+            Instantiate(turret, transform.position, Quaternion.identity, transform.parent);
+            Destroy(this.gameObject);
+        }
+        else if (Input.GetKeyUp(KeyCode.Alpha2)) {
+            Debug.Log("Bought 2");
+        }
+        else if (Input.GetKeyUp(KeyCode.Alpha3)) {
+            Debug.Log("Bought 3");
+        }
+    }
+
     private void OnMouseExit() {
         Destroy(temp);
     }
-
-    private void OnMouseUp() {
-        //TODO: REMOVE LATER
-        Instantiate(turret, transform.position, Quaternion.identity, transform.parent);
-        Destroy(this.gameObject);
-
-        if (!isUp) {
-            temp = Instantiate(buildWindowPrefab, new Vector3(0, 0, 0), Quaternion.identity, this.transform);
-            temp.transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y, transform.localPosition.z);
-            temp.transform.localScale = new Vector3(2, 1, 1);
-            isUp = true;
-        }
-        else {
-            Destroy(temp);
-            isUp = false;
-        }
-    }
-
-    void Update() {
-
-    }
+    
 }
