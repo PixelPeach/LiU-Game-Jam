@@ -7,6 +7,18 @@ public class Planet : MonoBehaviour {
 
     public void Simulate() {
         simulating = true;
+        GameObject[] turrets = GameObject.FindGameObjectsWithTag("turret");
+        foreach (GameObject turret in turrets) {
+            turret.GetComponent<Turret>().active = true;
+        }
+    }
+
+    public void StopSimulation() {
+        simulating = false;
+        GameObject[] turrets = GameObject.FindGameObjectsWithTag("turret");
+        foreach (GameObject turret in turrets) {
+            turret.GetComponent<Turret>().active = false;
+        }
     }
 
     void Update() {

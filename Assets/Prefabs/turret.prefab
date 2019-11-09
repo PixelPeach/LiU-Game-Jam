@@ -94,8 +94,8 @@ GameObject:
   - component: {fileID: 3611588201351249979}
   - component: {fileID: 3611588201351249977}
   m_Layer: 0
-  m_Name: turrent
-  m_TagString: Untagged
+  m_Name: turret
+  m_TagString: turret
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -179,3 +179,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 766928173606472257, guid: d4846ce541fd4694191d0a5ba1033a6c, type: 3}
+  active: 0

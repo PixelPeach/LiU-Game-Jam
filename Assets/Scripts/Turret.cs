@@ -6,7 +6,8 @@ public class Turret : MonoBehaviour {
     public GameObject bullet;
     float angle;
 
-    private bool shooting = true;
+    bool shooting = true;
+    public bool active = false;
 
     void Start() {
         float deltaX = transform.parent.position.x - transform.position.x;
@@ -24,7 +25,7 @@ public class Turret : MonoBehaviour {
     }
 
     void Update() {
-        if (shooting) {
+        if (shooting && active) {
             StartCoroutine(Shoot());
         }
     }
