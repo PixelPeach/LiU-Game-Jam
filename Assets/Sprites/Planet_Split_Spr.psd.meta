@@ -1,0 +1,985 @@
+fileFormatVersion: 2
+guid: 65df5e1221d07c8468585ca3b349bbdd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4279190993768011727
+    second: Planet_Split_Spr_0
+  - first:
+      213: -2739072786308400765
+    second: Planet_Split_Spr_1
+  - first:
+      213: -773988068312201116
+    second: Planet_Split_Spr_2
+  - first:
+      213: -6909634441636312334
+    second: Planet_Split_Spr_3
+  - first:
+      213: -79819588933241967
+    second: Planet_Split_Spr_4
+  - first:
+      213: -6977551184261948632
+    second: Planet_Split_Spr_5
+  - first:
+      213: -5996799509771690706
+    second: Planet_Split_Spr_6
+  - first:
+      213: 6556014745966342045
+    second: Planet_Split_Spr_7
+  - first:
+      213: -1442647789309063646
+    second: Planet_Split_Spr_8
+  - first:
+      213: -7281107668466729643
+    second: Planet_Split_Spr_9
+  - first:
+      213: -8452157131673515514
+    second: Planet_Split_Spr_10
+  - first:
+      213: 6948409777830455163
+    second: Planet_Split_Spr_11
+  - first:
+      213: -1870664181652729758
+    second: Planet_Split_Spr_12
+  - first:
+      213: 6506953711569810270
+    second: Planet_Split_Spr_13
+  - first:
+      213: -361924598699676790
+    second: Planet_Split_Spr_14
+  - first:
+      213: -3707765501140260941
+    second: Planet_Split_Spr_15
+  - first:
+      213: -8683004555120006899
+    second: Planet_Split_Spr_16
+  - first:
+      213: -1485676237424068580
+    second: Planet_Split_Spr_17
+  - first:
+      213: -4990106512663832007
+    second: Planet_Split_Spr_18
+  - first:
+      213: 3278407757850472323
+    second: Planet_Split_Spr_19
+  - first:
+      213: -244249028062394535
+    second: Planet_Split_Spr_20
+  - first:
+      213: 3586841746568687215
+    second: Planet_Split_Spr_21
+  - first:
+      213: 2580034965757815130
+    second: Planet_Split_Spr_22
+  - first:
+      213: -6262326500266854728
+    second: Planet_Split_Spr_23
+  - first:
+      213: -4605308043502723829
+    second: Planet_Split_Spr_24
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Planet_Split_Spr_0
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 910
+        width: 52
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10, y: 15}
+        - {x: -13, y: 1}
+        - {x: -26, y: -10}
+        - {x: -26, y: -15}
+        - {x: 26, y: -1}
+        - {x: 18, y: 8}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8600629f5b50594479b6a288556582dd
+      internalID: 4279190993768011727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planet_Split_Spr_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 614
+        width: 334
+        height: 311
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2, y: 155.5}
+        - {x: -65, y: 139.5}
+        - {x: -163, y: 25.5}
+        - {x: -144, y: 15.5}
+        - {x: -79, y: -48.5}
+        - {x: -34, y: -70.5}
+        - {x: -48, y: -135.5}
+        - {x: 18, y: -153.5}
+        - {x: 81, y: -147.5}
+        - {x: 164, y: -106.5}
+        - {x: 162, y: -62.5}
+        - {x: 137, y: -21.5}
+        - {x: 98, y: 11.5}
+        - {x: 56, y: 36.5}
+        - {x: 47, y: 91.5}
+        - {x: 14, y: 139.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1fec53a49b3ece42afba8b9b62ed16a
+      internalID: -2739072786308400765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planet_Split_Spr_2
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 633
+        width: 205
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30.5, y: 76.5}
+        - {x: -74.5, y: 3.5}
+        - {x: -87.5, y: -35.5}
+        - {x: -93.5, y: -66.5}
+        - {x: -45.5, y: -70.5}
+        - {x: -15.5, y: -60.5}
+        - {x: 41.5, y: -79.5}
+        - {x: 86.5, y: -84.5}
+        - {x: 101.5, y: -20.5}
+        - {x: 56.5, y: 2.5}
+        - {x: -10.5, y: 67.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1072a72fb7ba71849abedbb0510d9b1d
+      internalID: -773988068312201116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planet_Split_Spr_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 515
+        width: 57
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.5, y: 28}
+        - {x: -28.5, y: 24}
+        - {x: -28.5, y: -28}
+        - {x: -2.5, y: -3}
+        - {x: 26.5, y: 25}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e74307857b958b41b9dc4255803a54a
+      internalID: -6909634441636312334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planet_Split_Spr_4
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 201
+        width: 37
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.5, y: 10.5}
+        - {x: -18.5, y: 7.5}
+        - {x: -12.5, y: -6.5}
+        - {x: -2.5, y: -16.5}
+        - {x: 18.5, y: 8.5}
+        - {x: 18.5, y: 13.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40d91ab6f21c4b54c919ebf1d536311a
+      internalID: -79819588933241967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planet_Split_Spr_5
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 49
+        width: 41
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8.5, y: 16.5}
+        - {x: -18.5, y: -4.5}
+        - {x: 0.5, y: -16.5}
+        - {x: 6.5, y: -19.5}
+        - {x: 14.5, y: -21.5}
+        - {x: 15.5, y: -17.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc1a1901c1f86284ea90665ba65e2f35
+      internalID: -6977551184261948632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planet_Split_Spr_6
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 47
+        width: 87
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1.5, y: 18.5}
+        - {x: -26.5, y: 22.5}
+        - {x: -28.5, y: -27.5}
+        - {x: -22.5, y: -29.5}
+        - {x: -12.5, y: -31.5}
+        - {x: 13.5, y: -6.5}
+        - {x: 36.5, y: 12.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4ca06980e3523e4b8127bc8428df0da
+      internalID: -5996799509771690706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planet_Split_Spr_7
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 11
+        width: 136
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 44}
+        - {x: -41, y: 56}
+        - {x: -60, y: 32}
+        - {x: -64, y: 8}
+        - {x: -55, y: -40}
+        - {x: -43, y: -61}
+        - {x: 13, y: -46}
+        - {x: 62, y: -23}
+        - {x: 63, y: 32}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4ad4d17c5666504b8e6914cc72590f7
+      internalID: 6556014745966342045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planet_Split_Spr_8
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 342
+        width: 88
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 35, y: 25}
+        - {x: -26, y: 3}
+        - {x: -37, y: -3}
+        - {x: 26, y: -25}
+        - {x: 40, y: 22}
+        - {x: 41, y: 27}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b87fe68a39d62b54b98cec8ef97c85df
+      internalID: -1442647789309063646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planet_Split_Spr_9
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 845
+        width: 161
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -38.5, y: 59.5}
+        - {x: -66.5, y: 70.5}
+        - {x: -72.5, y: 10.5}
+        - {x: -46.5, y: -67.5}
+        - {x: 33.5, y: -49.5}
+        - {x: 74.5, y: -17.5}
+        - {x: 80.5, y: -17.5}
+        - {x: 37.5, y: 16.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c5f01629f391844c8c2b1c3bd3a73c6
+      internalID: -7281107668466729643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planet_Split_Spr_10
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 977
+        width: 84
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26, y: 22.5}
+        - {x: -1, y: 18.5}
+        - {x: -39, y: 7.5}
+        - {x: 18, y: -21.5}
+        - {x: 36, y: 19.5}
+        - {x: 33, y: 22.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6ce0f5e5232b1448b8a571d29df89b4
+      internalID: -8452157131673515514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planet_Split_Spr_11
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 706
+        width: 297
+        height: 318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -123.5, y: 159}
+        - {x: -143.5, y: 113}
+        - {x: -105.5, y: 92}
+        - {x: -141.5, y: 14}
+        - {x: -145.5, y: -49}
+        - {x: -93.5, y: -111}
+        - {x: -14.5, y: -158}
+        - {x: 29.5, y: -73}
+        - {x: 91.5, y: -93}
+        - {x: 133.5, y: -66}
+        - {x: 147.5, y: -11}
+        - {x: 122.5, y: 65}
+        - {x: 124.5, y: 126}
+        - {x: 49.5, y: 159}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: accb06f3b0348ef448b03a301dc45d0e
+      internalID: 6948409777830455163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planet_Split_Spr_12
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 0
+        width: 163
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff06bd48837decb4d8ae3ed98332b1aa
+      internalID: -1870664181652729758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planet_Split_Spr_13
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 530
+        width: 334
+        height: 494
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -116, y: 220}
+        - {x: -164, y: 162}
+        - {x: -132, y: 131}
+        - {x: -101, y: 85}
+        - {x: -91, y: 29}
+        - {x: -47, y: 3}
+        - {x: -10, y: -29}
+        - {x: 15, y: -71}
+        - {x: 16, y: -114}
+        - {x: 71, y: -174}
+        - {x: 110, y: -245}
+        - {x: 151, y: -154}
+        - {x: 166, y: -69}
+        - {x: 87, y: -23}
+        - {x: 35, y: 38}
+        - {x: 39, y: 101}
+        - {x: 75, y: 179}
+        - {x: 14, y: 214}
+        - {x: -19, y: 229}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee5070426bc6d91499e21c3576166e5d
+      internalID: 6506953711569810270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planet_Split_Spr_14
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 547
+        width: 331
+        height: 363
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 33.5, y: 175.5}
+        - {x: -7.5, y: 143.5}
+        - {x: -88.5, y: 125.5}
+        - {x: -103.5, y: 70.5}
+        - {x: -145.5, y: 43.5}
+        - {x: -134.5, y: -18.5}
+        - {x: -161.5, y: -96.5}
+        - {x: -107.5, y: -97.5}
+        - {x: -49.5, y: -127.5}
+        - {x: -7.5, y: -180.5}
+        - {x: 55.5, y: -152.5}
+        - {x: 82.5, y: -94.5}
+        - {x: 85.5, y: -41.5}
+        - {x: 165.5, y: 17.5}
+        - {x: 137.5, y: 96.5}
+        - {x: 63.5, y: 155.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bf7aca93c3cc834ebba955fa272c64f
+      internalID: -361924598699676790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planet_Split_Spr_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 505
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 72.5, y: 95}
+        - {x: 9.5, y: 89}
+        - {x: -54.5, y: 108}
+        - {x: -100.5, y: 112}
+        - {x: -155.5, y: 131}
+        - {x: -186.5, y: 121}
+        - {x: -235.5, y: 124}
+        - {x: -246.5, y: 91}
+        - {x: -250.5, y: 48}
+        - {x: -192.5, y: 44}
+        - {x: -128.5, y: 25}
+        - {x: -67.5, y: -27}
+        - {x: -35.5, y: -89}
+        - {x: 19.5, y: -130}
+        - {x: 84.5, y: -143}
+        - {x: 136.5, y: -130}
+        - {x: 162.5, y: -46}
+        - {x: 250.5, y: 4}
+        - {x: 210.5, y: 76}
+        - {x: 156.5, y: 135}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad79f0acfa5717c4791f7f16d52eef23
+      internalID: -3707765501140260941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planet_Split_Spr_16
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 530
+        width: 175
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12.5, y: 128}
+        - {x: -30.5, y: 44}
+        - {x: -46.5, y: -39}
+        - {x: -85.5, y: -129}
+        - {x: -84.5, y: -132}
+        - {x: 9.5, y: -106}
+        - {x: 58.5, y: -31}
+        - {x: 73.5, y: 8}
+        - {x: 85.5, y: 48}
+        - {x: 73.5, y: 109}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c8a729e6806ee14b9041a2ff28462f9
+      internalID: -8683004555120006899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planet_Split_Spr_17
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 0
+        width: 293
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 63.5, y: 148}
+        - {x: -24.5, y: 171}
+        - {x: -44.5, y: 80}
+        - {x: -108.5, y: 82}
+        - {x: -142.5, y: 46}
+        - {x: -143.5, y: -11}
+        - {x: -97.5, y: -80}
+        - {x: -86.5, y: -140}
+        - {x: -114.5, y: -172}
+        - {x: -63.5, y: -175}
+        - {x: 93.5, y: -175}
+        - {x: 124.5, y: -159}
+        - {x: 113.5, y: -141}
+        - {x: 103.5, y: -92}
+        - {x: 107.5, y: -69}
+        - {x: 128.5, y: -45}
+        - {x: 142.5, y: 41}
+        - {x: 130.5, y: 102}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84cc4878c596fca488efea0eff1e58dc
+      internalID: -1485676237424068580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planet_Split_Spr_18
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 252
+        width: 120
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30, y: 89}
+        - {x: -57, y: 6}
+        - {x: -41, y: -33}
+        - {x: -43, y: -80}
+        - {x: -37, y: -135}
+        - {x: 28, y: -137}
+        - {x: 48, y: -46}
+        - {x: 42, y: 43}
+        - {x: 57, y: 140}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e887f8de8d6f1294d83dcb142da585a4
+      internalID: -4990106512663832007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planet_Split_Spr_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 225
+        width: 217
+        height: 349
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 74.5, y: 102.5}
+        - {x: 12.5, y: 153.5}
+        - {x: -51.5, y: 171.5}
+        - {x: -108.5, y: 117.5}
+        - {x: -108.5, y: 0.5}
+        - {x: -57.5, y: -134.5}
+        - {x: -26.5, y: -171.5}
+        - {x: 18.5, y: -167.5}
+        - {x: 54.5, y: -122.5}
+        - {x: 45.5, y: -67.5}
+        - {x: 55.5, y: -4.5}
+        - {x: 108.5, y: 37.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 768aa86a7a7d6b749acd8af974e7b45d
+      internalID: 3278407757850472323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planet_Split_Spr_20
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 122
+        width: 156
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 53, y: 70.5}
+        - {x: -7, y: 17.5}
+        - {x: -74, y: -20.5}
+        - {x: -73, y: -46.5}
+        - {x: -66, y: -73.5}
+        - {x: -51, y: -88.5}
+        - {x: 37, y: 6.5}
+        - {x: 76, y: 78.5}
+        - {x: 76, y: 88.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3733014f0e0cb54c9fa7b533297d481
+      internalID: -244249028062394535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planet_Split_Spr_21
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 69
+        width: 313
+        height: 368
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 80.5, y: 130}
+        - {x: 14.5, y: 144}
+        - {x: -38.5, y: 184}
+        - {x: -91.5, y: 143}
+        - {x: -102.5, y: 80}
+        - {x: -92.5, y: 24}
+        - {x: -153.5, y: -51}
+        - {x: -80.5, y: -178}
+        - {x: -6.5, y: -182}
+        - {x: 16.5, y: -164}
+        - {x: 46.5, y: -128}
+        - {x: 118.5, y: -89}
+        - {x: 119.5, y: -33}
+        - {x: 152.5, y: 5}
+        - {x: 145.5, y: 62}
+        - {x: 148.5, y: 106}
+        - {x: 131.5, y: 145}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5c5afd53d667e247b9f7d3569c9695c
+      internalID: 3586841746568687215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planet_Split_Spr_22
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 369
+        width: 220
+        height: 376
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 132}
+        - {x: -21, y: 75}
+        - {x: -48, y: 19}
+        - {x: -110, y: -9}
+        - {x: -95, y: -79}
+        - {x: -51, y: -143}
+        - {x: 4, y: -177}
+        - {x: 24, y: -184}
+        - {x: 106, y: -152}
+        - {x: 110, y: -112}
+        - {x: 110, y: 84}
+        - {x: 58, y: 187}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa67c826535c52d4dbe19d37017bdd29
+      internalID: 2580034965757815130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planet_Split_Spr_23
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 189
+        width: 406
+        height: 445
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 194, y: -80.5}
+        - {x: 199, y: -59.5}
+        - {x: 122, y: -34.5}
+        - {x: 63, y: 1.5}
+        - {x: 18, y: 66.5}
+        - {x: 3, y: 135.5}
+        - {x: -40, y: 189.5}
+        - {x: -98, y: 218.5}
+        - {x: -152, y: 219.5}
+        - {x: -201, y: 145.5}
+        - {x: -178, y: 71.5}
+        - {x: -151, y: 34.5}
+        - {x: -81, y: -24.5}
+        - {x: -86, y: -106.5}
+        - {x: -68, y: -165.5}
+        - {x: -39, y: -189.5}
+        - {x: 27, y: -221.5}
+        - {x: 96, y: -182.5}
+        - {x: 157, y: -128.5}
+        - {x: 180, y: -112.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b3508dbe44ee27478a070e0418e49f4
+      internalID: -6262326500266854728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Planet_Split_Spr_24
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 84
+        width: 385
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -76.5, y: 234}
+        - {x: -173.5, y: 207}
+        - {x: -189.5, y: 106}
+        - {x: -182.5, y: 22}
+        - {x: -94.5, y: -1}
+        - {x: -27.5, y: -47}
+        - {x: -15.5, y: -108}
+        - {x: -29.5, y: -194}
+        - {x: 53.5, y: -214}
+        - {x: 138.5, y: -227}
+        - {x: 173.5, y: -200}
+        - {x: 159.5, y: -186}
+        - {x: 152.5, y: -160}
+        - {x: 152.5, y: -134}
+        - {x: 85.5, y: -102}
+        - {x: 56.5, y: -77}
+        - {x: 39.5, y: -19}
+        - {x: 43.5, y: 64}
+        - {x: -24.5, y: 119}
+        - {x: -53.5, y: 158}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a9e5ad2af5d8414c879321c20c8f283
+      internalID: -4605308043502723829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
