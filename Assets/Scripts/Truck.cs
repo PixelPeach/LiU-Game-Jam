@@ -22,7 +22,7 @@ public class Truck : MonoBehaviour {
 
     void ResetTransform() {
         transform.eulerAngles = new Vector3(0, 0, 0);
-        transform.localPosition = new Vector3(0, 2.25f, -1);
+        transform.localPosition = new Vector3(0, 2.25f, -1.0f);
     }
 
     void ChangePlanet() {
@@ -45,7 +45,7 @@ public class Truck : MonoBehaviour {
     void Update() {
         timer -= Time.deltaTime;
         if (timer <= 0.0f && garbage < maxGarbage) {
-            Instantiate(garbagePrefab, transform.position, Quaternion.identity, transform.parent.parent);
+            GameObject obj = Instantiate(garbagePrefab, new Vector3(transform.position.x, transform.position.y, transform.position.z + 1), Quaternion.identity, transform.parent.parent);
             garbage++;
             timer = GetRandomTimer();
         }

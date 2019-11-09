@@ -10,6 +10,14 @@ public class Garbage : MonoBehaviour {
     public GameObject house;
     //bool isUp = false;
     GameObject temp;
+    float angle;
+
+    private void Start() {
+        float deltaX = transform.parent.position.x - transform.position.x;
+        float deltaY = transform.parent.position.y - transform.position.y;
+        angle = Mathf.Atan2(deltaY, deltaX);
+        transform.eulerAngles = new Vector3(transform.rotation.x, transform.rotation.y, (Mathf.Rad2Deg * angle) + (Mathf.Rad2Deg * (Mathf.PI / 2)));
+    }
 
     void CheckForNeighbours() {
         GameObject[] garbageList = GameObject.FindGameObjectsWithTag("garbage");
@@ -42,17 +50,23 @@ public class Garbage : MonoBehaviour {
 
     private void OnMouseOver() {
         if (Input.GetKeyUp(KeyCode.Alpha1)) {
-            Instantiate(turret, transform.position, Quaternion.identity, transform.parent);
+            GameObject obj = Instantiate(turret, transform.position, Quaternion.identity, transform.parent);
+            obj.transform.eulerAngles = transform.eulerAngles;
+
             Destroy(this.gameObject);
             Destroy(temp);
         }
         else if (Input.GetKeyUp(KeyCode.Alpha2)) {
-            Instantiate(shield, transform.position, Quaternion.identity, transform.parent);
+            GameObject obj = Instantiate(shield, transform.position, Quaternion.identity, transform.parent);
+            obj.transform.eulerAngles = transform.eulerAngles;
+
             Destroy(this.gameObject);
             Destroy(temp);
         }
         else if (Input.GetKeyUp(KeyCode.Alpha3)) {
-            Instantiate(house, transform.position, Quaternion.identity, transform.parent);
+            GameObject obj = Instantiate(house, transform.position, Quaternion.identity, transform.parent);
+            obj.transform.eulerAngles = transform.eulerAngles;
+
             Destroy(this.gameObject);
             Destroy(temp);
         }
