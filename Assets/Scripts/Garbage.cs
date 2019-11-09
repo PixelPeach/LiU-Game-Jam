@@ -12,13 +12,6 @@ public class Garbage : MonoBehaviour {
     GameObject temp;
     float angle;
 
-    private void Start() {
-        float deltaX = transform.parent.position.x - transform.position.x;
-        float deltaY = transform.parent.position.y - transform.position.y;
-        angle = Mathf.Atan2(deltaY, deltaX);
-        transform.eulerAngles = new Vector3(transform.rotation.x, transform.rotation.y, (Mathf.Rad2Deg * angle) + (Mathf.Rad2Deg * (Mathf.PI / 2)));
-    }
-
     void CheckForNeighbours() {
         GameObject[] garbageList = GameObject.FindGameObjectsWithTag("garbage");
         foreach (GameObject garbage in garbageList) {
