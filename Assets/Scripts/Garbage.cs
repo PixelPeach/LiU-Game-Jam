@@ -5,9 +5,8 @@ using UnityEngine;
 public class Garbage : MonoBehaviour {
 
     public GameObject buildWindowPrefab;
-    public GameObject turret;
-    public GameObject shield;
-    public GameObject house;
+
+    public List<GameObject> placeables = new List<GameObject>();
 
     GameObject temp;
     float angle;
@@ -33,17 +32,17 @@ public class Garbage : MonoBehaviour {
 
     private void OnMouseOver() {
         if (Input.GetKeyUp(KeyCode.Alpha1)) {
-            Instantiate(turret, transform.position, Quaternion.identity, transform.parent);
+            Instantiate(placeables[0], transform.position, Quaternion.identity, transform.parent);
             Destroy(this.gameObject);
             Destroy(temp);
         }
         else if (Input.GetKeyUp(KeyCode.Alpha2)) {
-            Instantiate(shield, transform.position, Quaternion.identity, transform.parent);
+            Instantiate(placeables[1], transform.position, Quaternion.identity, transform.parent);
             Destroy(this.gameObject);
             Destroy(temp);
         }
         else if (Input.GetKeyUp(KeyCode.Alpha3)) {
-            Instantiate(house, transform.position, Quaternion.identity, transform.parent);
+            Instantiate(placeables[2], transform.position, Quaternion.identity, transform.parent);
             Destroy(this.gameObject);
             Destroy(temp);
         }
