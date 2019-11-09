@@ -813,7 +813,7 @@ GameObject:
   - component: {fileID: 1542553371}
   m_Layer: 0
   m_Name: planet
-  m_TagString: Untagged
+  m_TagString: planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -895,6 +895,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0bad250589473245ad5568461bb0953, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  truck: {fileID: 311519036229825334, guid: a6f2409d55f8a2440848456307e3bf90, type: 3}
+  planet: 2
 --- !u!4 &1586645704 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 311519036229825337, guid: a6f2409d55f8a2440848456307e3bf90,
@@ -914,7 +916,7 @@ GameObject:
   - component: {fileID: 1608480562}
   m_Layer: 0
   m_Name: planet
-  m_TagString: Untagged
+  m_TagString: planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -996,6 +998,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0bad250589473245ad5568461bb0953, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  truck: {fileID: 311519036229825334, guid: a6f2409d55f8a2440848456307e3bf90, type: 3}
+  planet: 1
 --- !u!1 &1633814634
 GameObject:
   m_ObjectHideFlags: 0
@@ -1283,6 +1287,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 311519036229825336, guid: a6f2409d55f8a2440848456307e3bf90,
+        type: 3}
+      propertyPath: planets.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 311519036229825336, guid: a6f2409d55f8a2440848456307e3bf90,
         type: 3}

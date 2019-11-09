@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Planet : MonoBehaviour {
+
+    public GameObject truck;
+    public int planet;
     bool simulating = false;
 
     public void Simulate() {
@@ -18,6 +21,17 @@ public class Planet : MonoBehaviour {
         GameObject[] turrets = GameObject.FindGameObjectsWithTag("turret");
         foreach (GameObject turret in turrets) {
             turret.GetComponent<Turret>().active = false;
+        }
+        if (planet == 1) {
+            GameObject temp = Instantiate(truck, transform.position, Quaternion.identity, transform.GetChild(0));
+            temp.GetComponent<Truck>().planets.Add(transform.GetChild(0).gameObject);
+            GameObject[] planets = GameObject.FindGameObjectsWithTag("planet");
+            foreach (GameObject planet in planets) {
+                if (planet.GetComponent<Planet>().planet == 2) {
+                    temp.GetComponent<Truck>().planets.Add(planet.transform.GetChild(0).gameObject);
+                }
+            }
+            temp.transform.localPosition = new Vector3(0, 2.25f, 0);
         }
     }
 

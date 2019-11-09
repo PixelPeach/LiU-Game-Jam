@@ -17,6 +17,12 @@ public class Truck : MonoBehaviour {
 
     void Start() {
         pivot = planets[index].transform;
+        ResetTransform();
+    }
+
+    void ResetTransform() {
+        transform.eulerAngles = new Vector3(0, 0, 0);
+        transform.localPosition = new Vector3(0, 2.25f, 0);
     }
 
     void ChangePlanet() {
@@ -26,8 +32,7 @@ public class Truck : MonoBehaviour {
         else {
             index++;
             transform.parent = planets[index].transform;
-            transform.eulerAngles = new Vector3(0,0,0);
-            transform.localPosition = new Vector3(0, 2.25f, 0);
+            ResetTransform();
             pivot = planets[index].transform;
             garbage = 0;
         }
