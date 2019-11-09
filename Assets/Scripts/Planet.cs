@@ -8,6 +8,7 @@ public class Planet : MonoBehaviour {
     public Healthbar healthbar;
     public int planet;
     bool simulating = false;
+    public int maxGarbage = 5;
 
     public void Simulate() {
         simulating = true;

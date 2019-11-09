@@ -5,11 +5,11 @@ using UnityEngine;
 public class Garbage : MonoBehaviour {
 
     public GameObject buildWindowPrefab;
-    public GameObject turret;
-    public GameObject shield;
-    public GameObject house;
-    //bool isUp = false;
+
+    public List<GameObject> placeables = new List<GameObject>();
+
     GameObject temp;
+    float angle;
 
     void CheckForNeighbours() {
         GameObject[] garbageList = GameObject.FindGameObjectsWithTag("garbage");
@@ -18,16 +18,6 @@ public class Garbage : MonoBehaviour {
                 if (garbage != gameObject) {
                     transform.localScale *= 1.25f;
                     Destroy(garbage);
-                    /*
-                    if (garbage.transform.localScale.x > transform.localScale.x) {
-                        garbage.transform.localScale *= 1.25f;
-                        Destroy(gameObject);
-                    }
-                    else {
-                        transform.localScale *= 1.25f;
-                        Destroy(garbage);
-                    }
-                    */
                 }
             }
         }
@@ -42,17 +32,17 @@ public class Garbage : MonoBehaviour {
 
     private void OnMouseOver() {
         if (Input.GetKeyUp(KeyCode.Alpha1)) {
-            Instantiate(turret, transform.position, Quaternion.identity, transform.parent);
+            Instantiate(placeables[0], transform.position, Quaternion.identity, transform.parent);
             Destroy(this.gameObject);
             Destroy(temp);
         }
         else if (Input.GetKeyUp(KeyCode.Alpha2)) {
-            Instantiate(shield, transform.position, Quaternion.identity, transform.parent);
+            Instantiate(placeables[1], transform.position, Quaternion.identity, transform.parent);
             Destroy(this.gameObject);
             Destroy(temp);
         }
         else if (Input.GetKeyUp(KeyCode.Alpha3)) {
-            Instantiate(house, transform.position, Quaternion.identity, transform.parent);
+            Instantiate(placeables[2], transform.position, Quaternion.identity, transform.parent);
             Destroy(this.gameObject);
             Destroy(temp);
         }
