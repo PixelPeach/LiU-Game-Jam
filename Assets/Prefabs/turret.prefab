@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 3611588201351249976}
   - component: {fileID: 3611588201351249979}
   - component: {fileID: 3611588201351249977}
+  - component: {fileID: -2360934264361987816}
   m_Layer: 0
   m_Name: turret
   m_TagString: turret
@@ -178,5 +179,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 878424de3a76918468163e854ebb03b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 0}
   bullet: {fileID: 766928173606472257, guid: d4846ce541fd4694191d0a5ba1033a6c, type: 3}
   active: 0
+--- !u!50 &-2360934264361987816
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3611588201351249978}
+  m_BodyType: 0
+  m_Simulated: 0
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: -0.25
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
