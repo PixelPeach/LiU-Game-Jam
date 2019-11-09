@@ -5,6 +5,7 @@ using UnityEngine;
 public class Planet : MonoBehaviour {
 
     public GameObject truck;
+    public Healthbar healthbar;
     public int planet;
     bool simulating = false;
 
@@ -25,6 +26,7 @@ public class Planet : MonoBehaviour {
         }
         if (planet == 1) {
             GameObject temp = Instantiate(truck, transform.position, Quaternion.identity, transform.GetChild(0));
+            temp.name = "truck";
             temp.GetComponent<Truck>().planets.Add(transform.GetChild(0).gameObject);
             GameObject[] planets = GameObject.FindGameObjectsWithTag("planet");
             foreach (GameObject planet in planets) {

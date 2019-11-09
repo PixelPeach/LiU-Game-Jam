@@ -22,7 +22,7 @@ public class Truck : MonoBehaviour {
 
     void ResetTransform() {
         transform.eulerAngles = new Vector3(0, 0, 0);
-        transform.localPosition = new Vector3(0, 2.25f, 0);
+        transform.localPosition = new Vector3(0, 2.25f, -1);
     }
 
     void ChangePlanet() {
