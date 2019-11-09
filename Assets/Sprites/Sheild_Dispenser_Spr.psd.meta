@@ -4,10 +4,16 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -2659705496438565489
-    second: Sheild_Dispenser_Top
+    second: Sheild_Dispenser_Top_1
   - first:
       213: -3027678185172831563
-    second: Sheild_Dispenser_Base
+    second: Sheild_Dispenser_Base_1
+  - first:
+      213: 9084527596500472923
+    second: Sheild_Dispenser_Top_2
+  - first:
+      213: -892814132283259154
+    second: Sheild_Dispenser_Base_2
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -92,7 +98,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sheild_Dispenser_Top
+      name: Sheild_Dispenser_Top_1
       rect:
         serializedVersion: 2
         x: 0
@@ -100,7 +106,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -113,10 +119,52 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sheild_Dispenser_Base
+      name: Sheild_Dispenser_Base_1
       rect:
         serializedVersion: 2
         x: 0
+        y: 0
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69392004298cf304ead363e3a65a1b0a
+      internalID: -3027678185172831563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheild_Dispenser_Top_2
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1024
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96538bb9f96955841a1376cb565e2158
+      internalID: 9084527596500472923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sheild_Dispenser_Base_2
+      rect:
+        serializedVersion: 2
+        x: 1024
         y: 0
         width: 1024
         height: 1024
@@ -127,8 +175,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69392004298cf304ead363e3a65a1b0a
-      internalID: -3027678185172831563
+      spriteID: cd41116b4cf740e4ab85207216f651cb
+      internalID: -892814132283259154
       vertices: []
       indices: 
       edges: []
