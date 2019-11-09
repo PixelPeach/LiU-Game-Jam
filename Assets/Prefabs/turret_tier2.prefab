@@ -70,7 +70,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -6348305237757769360, guid: e9cb0716178a45d4c9dd8d24572a597c,
+  m_Sprite: {fileID: -6508593428056976105, guid: e9cb0716178a45d4c9dd8d24572a597c,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 3611588201351249977}
   - component: {fileID: -2360934264361987816}
   m_Layer: 0
-  m_Name: turret
+  m_Name: turret_tier2
   m_TagString: turret
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -155,9 +155,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2233057533343377298, guid: e9cb0716178a45d4c9dd8d24572a597c,
+  m_Sprite: {fileID: 8471687359133003752, guid: e9cb0716178a45d4c9dd8d24572a597c,
     type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7971698, g: 1, b: 0.95729893, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -181,7 +181,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   bullet: {fileID: 766928173606472257, guid: d4846ce541fd4694191d0a5ba1033a6c, type: 3}
-  maxAngle: 75
+  maxAngle: 90
+  shootingSpeed: 1
   active: 0
 --- !u!50 &-2360934264361987816
 Rigidbody2D:

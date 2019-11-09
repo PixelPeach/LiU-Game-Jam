@@ -10,6 +10,10 @@ public class Turret : Placeble {
     public float maxAngle = 90;
     float targetAngle;
 
+    /// <summary>
+    /// Time is in seconds, where lower is faster
+    /// </summary>
+    public float shootingSpeed = 1.5f;
     bool shooting = true;
     public bool active = false;
 
@@ -29,7 +33,7 @@ public class Turret : Placeble {
         GameObject temp = Instantiate(bullet, transform.position, transform.rotation);
         temp.transform.eulerAngles = transform.GetChild(0).eulerAngles;
         temp.GetComponent<Bullet>().zRotation = Mathf.Deg2Rad * transform.localEulerAngles.z + Mathf.PI / 2;
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(shootingSpeed);
         shooting = true;
     }
 
