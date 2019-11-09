@@ -214,7 +214,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 274034081}
         m_MethodName: Simulate
         m_Mode: 1
         m_Arguments:
@@ -354,7 +354,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 274034081}
         m_MethodName: StopSimulation
         m_Mode: 1
         m_Arguments:
@@ -599,6 +599,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &274034081 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8486957080817880959, guid: b1e932f3a3bd5cb4982692181e911cc7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1434778562}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0bad250589473245ad5568461bb0953, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &327829206 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8486957079682612891, guid: b1e932f3a3bd5cb4982692181e911cc7,
