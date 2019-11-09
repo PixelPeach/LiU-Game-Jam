@@ -22,8 +22,10 @@ public abstract class Placeble : MonoBehaviour
 
     void TakeDamage()
     {
-
+        
     }
+
+    
 
     void Update()
     {

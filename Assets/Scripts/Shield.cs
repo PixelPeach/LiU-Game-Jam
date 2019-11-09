@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class Shield : Placeble {
 
+    private void Start()
+    {
+        StickToPlanet();
+
+    }
+
     int health = 2;
 
     public void GetHurt() {
