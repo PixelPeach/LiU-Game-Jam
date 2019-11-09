@@ -6,6 +6,7 @@ TagManager:
   tags:
   - turret
   - planet
+  - garbage
   layers:
   - Default
   - TransparentFX
