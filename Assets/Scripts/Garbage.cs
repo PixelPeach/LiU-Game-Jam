@@ -24,23 +24,26 @@ public class Garbage : MonoBehaviour {
 
     private void OnMouseEnter() {
         CheckForNeighbours();
-        temp = Instantiate(buildWindowPrefab, transform.position, Quaternion.identity, transform);
-        temp.transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y + 2, transform.localPosition.z);
-        temp.transform.localScale = new Vector3(10f, 10f, 10f);
+        temp = Instantiate(buildWindowPrefab, transform.position, Quaternion.identity);
+        temp.transform.position = new Vector3(transform.position.x, transform.position.y + 1, transform.position.z);
+        temp.transform.localScale = new Vector3(1f, 1f, 1f);
     }
 
     private void OnMouseOver() {
         if (Input.GetKeyUp(KeyCode.Alpha1)) {
             Instantiate(turret, transform.position, Quaternion.identity, transform.parent);
             Destroy(this.gameObject);
+            Destroy(temp);
         }
         else if (Input.GetKeyUp(KeyCode.Alpha2)) {
             Instantiate(shield, transform.position, Quaternion.identity, transform.parent);
             Destroy(this.gameObject);
+            Destroy(temp);
         }
         else if (Input.GetKeyUp(KeyCode.Alpha3)) {
             Instantiate(house, transform.position, Quaternion.identity, transform.parent);
             Destroy(this.gameObject);
+            Destroy(temp);
         }
     }
 
