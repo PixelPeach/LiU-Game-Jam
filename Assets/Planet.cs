@@ -5,6 +5,7 @@ using UnityEngine;
 public class Planet : MonoBehaviour {
 
     public GameObject truck;
+    public Healthbar healthbar;
     public int planet;
     bool simulating = false;
 

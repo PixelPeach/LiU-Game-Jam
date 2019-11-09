@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Garbage : MonoBehaviour {
+
     public GameObject buildWindowPrefab;
     public GameObject turret;
     public GameObject shield;
     public GameObject house;
-    bool isUp = false;
+    //bool isUp = false;
     GameObject temp;
 
     void CheckForNeighbours() {

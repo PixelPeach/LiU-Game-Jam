@@ -3,13 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Bullet : MonoBehaviour {
-    float speed = 0.1f;
+
+    //float speed = 0.1f;
 
     [HideInInspector]
     public float zRotation;
 
     private void OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.tag == "planet") {
+            collision.gameObject.GetComponent<Planet>().healthbar.GetHurt();
+            Destroy(this.gameObject);
+        }
+        else if (collision.gameObject.tag == "shield") {
+            collision.gameObject.transform.localScale *= 0.75f;
             Destroy(this.gameObject);
         }
     }
