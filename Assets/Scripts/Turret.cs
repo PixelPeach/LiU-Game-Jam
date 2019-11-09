@@ -16,7 +16,8 @@ public class Turret : Placeble {
     void Start() {
         gameObject.name = "turret";
         rb = GetComponent<Rigidbody2D>();
-        
+        StickToPlanet();
+
     }
 
     public void ActivateGravity() {
