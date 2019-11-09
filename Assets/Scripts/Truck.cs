@@ -41,7 +41,7 @@ public class Truck : MonoBehaviour {
 
     void Update() {
         timer -= Time.deltaTime;
-        int maxGarbage = GameObject.FindGameObjectsWithTag("planet")[index].GetComponent<Planet>().maxGarbage;
+        int maxGarbage = transform.parent.parent.GetComponent<Planet>().maxGarbage;
         if (timer <= 0.0f && garbage < maxGarbage)
         {
             Instantiate(garbagePrefab, transform.position, Quaternion.identity, transform.parent.parent);

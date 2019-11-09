@@ -154,7 +154,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 4317090764032092061, guid: 9f4010db22f96d945a18781a6b988341,
     type: 3}
   m_Color: {r: 0.509434, g: 0.509434, b: 0.509434, a: 1}
@@ -182,7 +182,6 @@ MonoBehaviour:
   planets: []
   garbagePrefab: {fileID: 1055571875173982359, guid: b11dd0ee2fced7c45a459e55e984e14d,
     type: 3}
-  maxGarbage: 5
 --- !u!1 &311519036427621020
 GameObject:
   m_ObjectHideFlags: 0
