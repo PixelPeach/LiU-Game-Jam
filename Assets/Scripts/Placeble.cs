@@ -4,7 +4,7 @@ using UnityEngine;
 
 public abstract class Placeble : MonoBehaviour {
     protected float angle;
-    protected int startHealth = 5;
+    protected int startHealth = 4;
     protected int health;
     protected GameObject dustPrefab;
 

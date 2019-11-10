@@ -190,7 +190,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5953059509201889965}
   m_Layer: 0
-  m_Name: Shield
+  m_Name: shield
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -325,8 +325,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70640b8849f8e204cabd2aa7b6199486, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  size: 1
-  startHealth: 2
+  dust: {fileID: 0}
+  size: 1.25
+  scaleMultiplier: 0.75
+  tier2: 0
 --- !u!1 &8198524174849608133
 GameObject:
   m_ObjectHideFlags: 0
