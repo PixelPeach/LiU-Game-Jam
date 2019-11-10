@@ -5,6 +5,7 @@ using UnityEngine;
 public class Shield : Placeble {
 
     public float size = 1;
+    public float scaleMultiplier = 0.75f;
     public int startHealth = 2;
     int health;
 
@@ -18,7 +19,7 @@ public class Shield : Placeble {
 
     public void GetHurt() {
         health--;
-        gameObject.transform.localScale *= 0.75f;
+        gameObject.transform.localScale *= scaleMultiplier;
         if (health < 0) {
             Destroy(gameObject.transform.parent.gameObject);
         }

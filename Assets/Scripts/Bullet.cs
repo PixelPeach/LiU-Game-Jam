@@ -9,8 +9,17 @@ public class Bullet : MonoBehaviour {
 
     [HideInInspector]
     public float zRotation;
+    public float bulletSpeed = 10.0f;
+    public float safeShootArea = 3.0f;
+
+    public float yOffscreen = 5.1f;
+    public float xOffscreen = 9.6f;
+
+    public List<Vector3> planetPositions = new List<Vector3>();
 
     private void Start() {
+        planetPositions.Add(new Vector3(-8, 0, -1));
+        planetPositions.Add(new Vector3(0, 0, -1));
         startPos = transform.position;
     }
 
@@ -21,8 +30,8 @@ public class Bullet : MonoBehaviour {
                 collision.gameObject.GetComponent<Planet>().StopSimulation();
 
                 Vector3 pos = new Vector3(0, 0, 0);
-                if (collision.gameObject.GetComponent<Planet>().planet == 1) { pos = new Vector3(-8, 0, -1); }
-                else if (collision.gameObject.GetComponent<Planet>().planet == 2) { pos = new Vector3(0, 0, -1); }
+                if (collision.gameObject.GetComponent<Planet>().planet == 1) { pos = planetPositions[0]; }
+                else if (collision.gameObject.GetComponent<Planet>().planet == 2) { pos = planetPositions[1]; }
                 Instantiate(planetParts, pos, Quaternion.identity);
 
                 Destroy(collision.gameObject);
@@ -30,7 +39,7 @@ public class Bullet : MonoBehaviour {
             Destroy(this.gameObject);
         }
         else if (collision.gameObject.tag == "shield") {
-            if (Vector3.Distance(startPos, collision.transform.position) > 3.0f) {
+            if (Vector3.Distance(startPos, collision.transform.position) > safeShootArea) {
                 collision.gameObject.GetComponent<Shield>().GetHurt();
                 Destroy(this.gameObject);
             }
@@ -38,9 +47,9 @@ public class Bullet : MonoBehaviour {
     }
 
     void Update() {
-        transform.position += transform.up * Time.deltaTime * 10.0f;
+        transform.position += transform.up * Time.deltaTime * bulletSpeed;
 
-        if (transform.position.x < -9.6f || transform.position.x > 9.6f || transform.position.y < -5.1f || transform.position.y > 5.1f) {
+        if (transform.position.x < -xOffscreen || transform.position.x > xOffscreen || transform.position.y < -yOffscreen || transform.position.y > yOffscreen) {
             Destroy(this.gameObject);
         }
     }
