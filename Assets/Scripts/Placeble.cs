@@ -17,7 +17,9 @@ public abstract class Placeble : MonoBehaviour {
     }
 
     private void InstantiateDust() {
-        Instantiate(dustPrefab, transform.position, Quaternion.identity);
+        for (int i = 0; i < 5; i++) {
+            Instantiate(dustPrefab, transform.position, Quaternion.identity);
+        }
     }
 
     public virtual void Regenerate() {
