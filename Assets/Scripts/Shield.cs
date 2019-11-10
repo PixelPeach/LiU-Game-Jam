@@ -7,13 +7,14 @@ public class Shield : Placeble {
     public GameObject dust;
     public float size = 1;
     public float scaleMultiplier = 0.75f;
-
+    
     public bool tier2;
 
     private void Start()
     {
+        health = 4;
         if (tier2) {
-            Regenerate();
+            health = 6;
         }
         transform.parent.eulerAngles = StickToPlanet(transform.parent.parent.position, transform.parent);
         dustPrefab = dust;
