@@ -1463,6 +1463,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   restartText: {fileID: 1477855310}
+  roundButton: {fileID: 53811925}
   truck: {fileID: 311519036229825334, guid: a6f2409d55f8a2440848456307e3bf90, type: 3}
   healthbar: {fileID: 782014679}
   planet: 2
@@ -1592,6 +1593,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   restartText: {fileID: 1477855310}
+  roundButton: {fileID: 53811925}
   truck: {fileID: 311519036229825334, guid: a6f2409d55f8a2440848456307e3bf90, type: 3}
   healthbar: {fileID: 800243345}
   planet: 1
