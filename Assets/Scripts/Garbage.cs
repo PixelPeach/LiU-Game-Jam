@@ -36,7 +36,6 @@ public class Garbage : Placeble
         }
     }
 
-    // No need to write our own Mouse-Over functions!
     private void OnMouseEnter()
     {
         CheckForNeighbours();

@@ -37,8 +37,8 @@ public class Turret : Placeble {
     //Should re-write this code
     void RotateTurret() {
         GameObject[] Planets = GameObject.FindGameObjectsWithTag("planet");
+
         foreach (GameObject planet in Planets) {
-            
             //This does not do anything
             if (planet == this.transform.parent.gameObject)
             {
