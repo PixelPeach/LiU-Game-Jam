@@ -12,7 +12,7 @@ public class Healthbar : MonoBehaviour {
 
     public void GetHurt() {
         if (health > 0.0f) {
-            health -= 0.1f;
+            health -= 0.075f;
         }
         else {
             isDead = true;

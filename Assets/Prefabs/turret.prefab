@@ -182,7 +182,7 @@ MonoBehaviour:
   dust: {fileID: 7083791492522318602, guid: e63fef6b8dd18d840a8720278ecdedc9, type: 3}
   rb: {fileID: 0}
   bullet: {fileID: 766928173606472257, guid: d4846ce541fd4694191d0a5ba1033a6c, type: 3}
-  shootingSpeed: 1.5
+  shootingSpeed: 1.75
   maxAngle: 75
   active: 0
 --- !u!58 &665646096
