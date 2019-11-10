@@ -49,7 +49,7 @@ public class Garbage : Placeble
 
     private void OnMouseOver()
     {
-        if (true) //Building phase
+        if (GameObject.Find("truck") == null) //Building phase
         {
             if (Input.GetKeyUp(KeyCode.Alpha1))
             {
