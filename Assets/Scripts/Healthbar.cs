@@ -13,7 +13,6 @@ public class Healthbar : MonoBehaviour {
     public void GetHurt() {
         if (health > 0.0f) {
             health -= 0.1f;
-            transform.localScale = new Vector2(health, transform.localScale.y);
         }
         else {
             isDead = true;
