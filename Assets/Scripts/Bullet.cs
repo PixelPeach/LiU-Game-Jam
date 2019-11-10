@@ -15,8 +15,10 @@ public class Bullet : MonoBehaviour {
             if (collision.gameObject.GetComponent<Planet>().healthbar.isDead) {
                 collision.gameObject.GetComponent<Planet>().StopSimulation();
 
-                //TODO: Detach turret from planet
-                Instantiate(planetParts, collision.transform.position, Quaternion.identity);
+                Vector3 pos = new Vector3(0,0,0);
+                if (collision.gameObject.GetComponent<Planet>().planet == 1) { pos = new Vector3(-8, 0, -1); }
+                else if (collision.gameObject.GetComponent<Planet>().planet == 2) { pos = new Vector3(0, 0, -1); }
+                Instantiate(planetParts, pos, Quaternion.identity);
 
                 Destroy(collision.gameObject);
             }
