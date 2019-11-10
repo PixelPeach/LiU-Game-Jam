@@ -5,9 +5,14 @@ using UnityEngine;
 public class Bullet : MonoBehaviour {
 
     public GameObject planetParts;
+    public Vector2 startPos;
 
     [HideInInspector]
     public float zRotation;
+
+    private void Start() {
+        startPos = transform.position;
+    }
 
     private void OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.tag == "planet") {
@@ -15,7 +20,7 @@ public class Bullet : MonoBehaviour {
             if (collision.gameObject.GetComponent<Planet>().healthbar.isDead) {
                 collision.gameObject.GetComponent<Planet>().StopSimulation();
 
-                Vector3 pos = new Vector3(0,0,0);
+                Vector3 pos = new Vector3(0, 0, 0);
                 if (collision.gameObject.GetComponent<Planet>().planet == 1) { pos = new Vector3(-8, 0, -1); }
                 else if (collision.gameObject.GetComponent<Planet>().planet == 2) { pos = new Vector3(0, 0, -1); }
                 Instantiate(planetParts, pos, Quaternion.identity);
@@ -25,8 +30,10 @@ public class Bullet : MonoBehaviour {
             Destroy(this.gameObject);
         }
         else if (collision.gameObject.tag == "shield") {
-            collision.gameObject.GetComponent<Shield>().GetHurt();
-            Destroy(this.gameObject);
+            if (Vector3.Distance(startPos, collision.transform.position) > 3.0f) {
+                collision.gameObject.GetComponent<Shield>().GetHurt();
+                Destroy(this.gameObject);
+            }
         }
     }
 
