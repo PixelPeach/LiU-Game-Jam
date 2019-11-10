@@ -96,6 +96,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e37112d2f68da3440abe729a43d12910, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  planetParts: {fileID: 2494843233712729280, guid: d17f2f042726d9b4683590e4aa0b352c,
+    type: 3}
   zRotation: 0
 --- !u!58 &1299103513
 CircleCollider2D:

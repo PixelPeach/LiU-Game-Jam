@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour {
 
+    public GameObject planetParts;
+
     [HideInInspector]
     public float zRotation;
 
@@ -14,6 +16,7 @@ public class Bullet : MonoBehaviour {
                 collision.gameObject.GetComponent<Planet>().StopSimulation();
 
                 //TODO: Detach turret from planet
+                Instantiate(planetParts, collision.transform.position, Quaternion.identity);
 
                 Destroy(collision.gameObject);
             }
