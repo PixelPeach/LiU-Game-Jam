@@ -10,6 +10,7 @@ public class RoundHandeler : MonoBehaviour
 
     void Update()
     {
+        // If truck is doing its thing, make buttons non-interactable
         if (GameObject.Find("truck") != null) {
             startRound.interactable = false;
             nextRound.interactable = false;
