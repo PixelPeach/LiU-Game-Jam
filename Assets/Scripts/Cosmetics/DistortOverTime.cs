@@ -5,8 +5,6 @@ using UnityEngine;
 
 public class DistortOverTime : MonoBehaviour
 {
-    //What is this script used for?
-
     public float animationSpeed = 2f;
     private float timer = 0;
 

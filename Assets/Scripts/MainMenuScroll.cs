@@ -6,13 +6,12 @@ public class MainMenuScroll : MonoBehaviour
 {
     float width = 20;
 
-    void Start()
-    {
-        
-    }
-
     void Update()
     {
+        if (width > 200) {
+            width = 20;
+        }
+
         width += Time.deltaTime;
         GetComponent<SpriteRenderer>().size = new Vector2(width, width);
     }

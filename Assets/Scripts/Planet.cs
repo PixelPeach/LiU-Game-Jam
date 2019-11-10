@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Planet : MonoBehaviour {
 
+    public GameObject restartText;
     public GameObject truck;
     public Healthbar healthbar;
     public int planet;
@@ -15,6 +16,10 @@ public class Planet : MonoBehaviour {
 
     bool simulating = false;
     float timer = 8.0f;
+
+    private void OnDestroy() {
+        restartText.SetActive(true);
+    }
 
     public void Simulate() {
         simulating = true;
@@ -33,6 +38,7 @@ public class Planet : MonoBehaviour {
         }
         if (planet == 1) {
             GameObject[] planets = GameObject.FindGameObjectsWithTag("planet");
+            
             //If player dies after StopSimulation is called this will not work.
             if (planets.Length > 1) {
                 GameObject temp = Instantiate(truck, transform.position, Quaternion.identity, transform.GetChild(0));
