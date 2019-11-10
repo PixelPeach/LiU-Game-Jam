@@ -4,7 +4,7 @@ using UnityEngine;
 
 public abstract class Placeble : MonoBehaviour {
     protected float angle;
-    protected int startHealth = 3;
+    protected int startHealth = 5;
     protected int health;
     protected GameObject dustPrefab;
 
@@ -23,6 +23,11 @@ public abstract class Placeble : MonoBehaviour {
     }
 
     public virtual void Regenerate() {
+        //if we add this to shields each round
+        //if (health+1 > startHealth)
+        //{
+        //    return;
+        //}
         health++;
     }
 
