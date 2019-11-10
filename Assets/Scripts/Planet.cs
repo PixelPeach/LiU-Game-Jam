@@ -9,6 +9,10 @@ public class Planet : MonoBehaviour {
     public int planet;
     public int maxGarbage = 5;
 
+    public float truckStartPositionY = 2.25f;
+    public float planetTurnSpeed = 45.0f;
+    public float roundTime = 8.0f;
+
     bool simulating = false;
     float timer = 8.0f;
 
@@ -39,7 +43,7 @@ public class Planet : MonoBehaviour {
                         temp.GetComponent<Truck>().planets.Add(planet.transform.GetChild(0).gameObject);
                     }
                 }
-                temp.transform.localPosition = new Vector3(0, 2.25f, 0);
+                temp.transform.localPosition = new Vector3(0, truckStartPositionY, 0);
             }
         }
     }
@@ -48,10 +52,10 @@ public class Planet : MonoBehaviour {
         if (simulating) {
             timer -= Time.deltaTime;
             if (timer > 0.0f) {
-                transform.Rotate(0, 0, -45.0f * Time.deltaTime, Space.Self);
+                transform.Rotate(0, 0, -planetTurnSpeed * Time.deltaTime, Space.Self);
             }
             else {
-                timer = 8.0f;
+                timer = roundTime;
                 StopSimulation();
             }
         }
