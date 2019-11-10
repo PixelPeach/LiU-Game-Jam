@@ -5,6 +5,8 @@ using UnityEngine;
 public class Planet : MonoBehaviour {
 
     public GameObject restartText;
+    public GameObject roundButton;
+
     public GameObject truck;
     public Healthbar healthbar;
     public int planet;
@@ -19,6 +21,7 @@ public class Planet : MonoBehaviour {
 
     private void OnDestroy() {
         restartText.SetActive(true);
+        roundButton.SetActive(false);
     }
 
     public void Simulate() {
