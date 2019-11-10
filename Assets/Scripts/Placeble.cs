@@ -14,9 +14,4 @@ public abstract class Placeble : MonoBehaviour
         return new Vector3(self.rotation.x, self.rotation.y, (Mathf.Rad2Deg * angle) + (Mathf.Rad2Deg * (Mathf.PI / 2)));
     }
 
-    void TakeDamage()
-    {
-        //add health to all buildings
-    }
-
 }

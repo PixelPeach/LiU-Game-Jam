@@ -4,13 +4,10 @@ using UnityEngine;
 
 public class Wheel : MonoBehaviour
 {
-    void Start()
-    {
-        
-    }
+    public float rotationSpeed = 345.0f;
 
     void Update()
     {
-        //transform.Rotate(0, 0, 345.0f * Time.deltaTime, Space.Self);
+        transform.Rotate(0, 0, rotationSpeed * Time.deltaTime, Space.Self);
     }
 }

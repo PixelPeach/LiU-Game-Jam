@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Garbage : Placeble
 {
+    //Some questionable fields
     public SpriteRenderer spriteRenderer;
     public Sprite tier2Sprite;
     public GameObject buildWindowPrefab;
@@ -25,20 +26,17 @@ public class Garbage : Placeble
             {
                 if (garbage != gameObject)
                 {
-                    //TODO: change placeables to tier 2 and change the current sprite to tier 2
+                    // Why are we changing garbage sprite?
                     spriteRenderer.sprite = tier2Sprite;
+
                     placeables = tier2_placeables;
-                    //Instantiate(tier2, transform.position, Quaternion.identity, transform.parent);
-                    //Destroy(buildingWindow);      
                     Destroy(garbage);
                 }
             }
         }
     }
 
-    /// <summary>
-    /// Might need to make a own onmouse enter function
-    /// </summary>
+    // No need to write our own Mouse-Over functions!
     private void OnMouseEnter()
     {
         CheckForNeighbours();
@@ -49,7 +47,8 @@ public class Garbage : Placeble
 
     private void OnMouseOver()
     {
-        if (GameObject.Find("truck") == null) //Building phase
+        // If truck exists, you are not able to place objects
+        if (GameObject.Find("truck") == null)
         {
             if (Input.GetKeyUp(KeyCode.Alpha1))
             {

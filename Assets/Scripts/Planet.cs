@@ -7,8 +7,9 @@ public class Planet : MonoBehaviour {
     public GameObject truck;
     public Healthbar healthbar;
     public int planet;
-    bool simulating = false;
     public int maxGarbage = 5;
+
+    bool simulating = false;
     float timer = 8.0f;
 
     public void Simulate() {

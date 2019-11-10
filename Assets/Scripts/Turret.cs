@@ -7,15 +7,12 @@ public class Turret : Placeble {
     public Rigidbody2D rb;
     public GameObject bullet;
 
-    public float maxAngle = 90;
-    float targetAngle;
-
-    /// <summary>
-    /// Time is in seconds, where lower is faster
-    /// </summary>
     public float shootingSpeed = 1.5f;
-    bool shooting = true;
+    public float maxAngle = 90;
     public bool active = false;
+
+    float targetAngle;
+    bool shooting = true;
 
     void Start() {
         gameObject.name = "turret";
@@ -37,13 +34,17 @@ public class Turret : Placeble {
         shooting = true;
     }
 
+    //Should re-write this code
     void RotateTurret() {
         GameObject[] Planets = GameObject.FindGameObjectsWithTag("planet");
         foreach (GameObject planet in Planets) {
-            if (planet == this.transform.parent.gameObject) //check if the planet is the parent
+            
+            //This does not do anything
+            if (planet == this.transform.parent.gameObject)
             {
                 continue;
             }
+
             float deltaXTarget = planet.transform.position.x - transform.parent.position.x;
             float deltaYTarget = planet.transform.position.y - transform.parent.position.y;
             targetAngle = Mathf.Atan2(deltaYTarget, deltaXTarget);
@@ -62,10 +63,5 @@ public class Turret : Placeble {
 
     void Update() {
         RotateTurret();
-        /*
-        if (shooting && active) {
-            StartCoroutine(Shoot());
-        }
-        */
     }
 }
