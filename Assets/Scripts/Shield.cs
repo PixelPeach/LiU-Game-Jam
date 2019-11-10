@@ -4,20 +4,24 @@ using UnityEngine;
 
 public class Shield : Placeble {
 
+    public GameObject dust;
     public float size = 1;
     public float scaleMultiplier = 0.75f;
-    public int startHealth = 2;
-    int health;
+
+    public bool tier2;
 
     private void Start()
     {
+        if (tier2) {
+            Regenerate();
+        }
         transform.parent.eulerAngles = StickToPlanet(transform.parent.parent.position, transform.parent);
+        dustPrefab = dust;
         gameObject.transform.localScale *= size;
-        health = startHealth;
     }
 
 
-    public void GetHurt() {
+    public override void GetHurt() {
         health--;
         gameObject.transform.localScale *= scaleMultiplier;
         if (health < 0) {

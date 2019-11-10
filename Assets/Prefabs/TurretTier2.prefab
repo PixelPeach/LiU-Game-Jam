@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 3611588201351249979}
   - component: {fileID: 3611588201351249977}
   - component: {fileID: -2360934264361987816}
+  - component: {fileID: 5348486140274149094}
   m_Layer: 0
   m_Name: TurretTier2
   m_TagString: turret
@@ -179,10 +180,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 878424de3a76918468163e854ebb03b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dust: {fileID: 7083791492522318602, guid: e63fef6b8dd18d840a8720278ecdedc9, type: 3}
   rb: {fileID: 0}
   bullet: {fileID: 766928173606472257, guid: d4846ce541fd4694191d0a5ba1033a6c, type: 3}
-  maxAngle: 90
   shootingSpeed: 1
+  maxAngle: 90
   active: 0
 --- !u!50 &-2360934264361987816
 Rigidbody2D:
@@ -205,3 +207,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!58 &5348486140274149094
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3611588201351249978}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2.75

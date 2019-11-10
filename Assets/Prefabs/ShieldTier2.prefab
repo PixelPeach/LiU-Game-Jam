@@ -326,7 +326,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   size: 1.5
-  startHealth: 3
+  scaleMultiplier: 0.75
+  tier2: 1
 --- !u!1 &6186099049635766157
 GameObject:
   m_ObjectHideFlags: 0

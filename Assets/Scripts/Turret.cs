@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Turret : Placeble {
 
+    public GameObject dust;
     public Rigidbody2D rb;
     public GameObject bullet;
 
@@ -18,6 +19,7 @@ public class Turret : Placeble {
         gameObject.name = "turret";
         rb = GetComponent<Rigidbody2D>();
         transform.eulerAngles = StickToPlanet(transform.parent.position, transform);
+        dustPrefab = dust;
     }
 
     public void ActivateGravity() {

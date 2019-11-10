@@ -44,6 +44,18 @@ public class Bullet : MonoBehaviour {
                 Destroy(this.gameObject);
             }
         }
+        else if (collision.gameObject.tag == "turret") {
+            if (Vector3.Distance(startPos, collision.transform.position) > safeShootArea) {
+                collision.gameObject.GetComponent<Turret>().GetHurt();
+                Destroy(this.gameObject);
+            }
+        }
+        else if (collision.gameObject.tag == "house") {
+            if (Vector3.Distance(startPos, collision.transform.position) > safeShootArea) {
+                collision.gameObject.GetComponent<House>().GetHurt();
+                Destroy(this.gameObject);
+            }
+        }
     }
 
     void Update() {

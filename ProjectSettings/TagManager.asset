@@ -8,6 +8,7 @@ TagManager:
   - planet
   - garbage
   - shield
+  - house
   layers:
   - Default
   - TransparentFX
