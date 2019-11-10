@@ -53,20 +53,22 @@ public class Garbage : Placeble
         {
             if (Input.GetKeyUp(KeyCode.Alpha1))
             {
-                Debug.Log("Tower");
-                Instantiate(placeables[0], transform.position, Quaternion.identity, transform.parent);
+                Vector3 pos = new Vector3(transform.position.x, transform.position.y, transform.position.z+1);
+                Instantiate(placeables[0], pos, Quaternion.identity, transform.parent);
                 Destroy(this.gameObject);
                 Destroy(buildingWindow);
             }
             else if (Input.GetKeyUp(KeyCode.Alpha2))
             {
-                Instantiate(placeables[1], transform.position, Quaternion.identity, transform.parent);
+                Vector3 pos = new Vector3(transform.position.x, transform.position.y, transform.position.z+1);
+                Instantiate(placeables[1], pos, Quaternion.identity, transform.parent);
                 Destroy(this.gameObject);
                 Destroy(buildingWindow);
             }
             else if (Input.GetKeyUp(KeyCode.Alpha3))
             {
-                Instantiate(placeables[2], transform.position, Quaternion.identity, transform.parent);
+                Vector3 pos = new Vector3(transform.position.x, transform.position.y, transform.position.z+1);
+                Instantiate(placeables[2], pos, Quaternion.identity, transform.parent);
                 Destroy(this.gameObject);
                 Destroy(buildingWindow);
             }
